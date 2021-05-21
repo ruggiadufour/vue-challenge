@@ -46,7 +46,7 @@
     </div>
     <footer class="navbar navbar-dark bg-dark d-flex justify-content-center">
       <a
-        href="https://github.com/ruggiadufour/bigbox-challenge"
+        href="https://github.com/ruggiadufour/vue-challenge"
         target="_blank"
       >
         <img src="/github.png" alt="github" width="50px" />
