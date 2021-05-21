@@ -1,10 +1,10 @@
 <template>
-  <div class="d-flex flex-column flex-wrap justify-content-center m-3">
+  <div class="d-flex flex-column flex-wrap align-items-center justify-content-center m-3">
     <h1 v-if="loading === true">⏳</h1>
     <h1 v-if="books.length === 0 && loading === false">No results</h1>
 
     <div class="d-flex flex-wrap justify-content-center gap10">
-      <div v-for="book in books">
+      <div v-for="book in books" v-bind:key="book.primary_isbn10">
         <Card :book="book" />
       </div>
     </div>
@@ -41,7 +41,6 @@ export default {
         this.books = filtered_books;
         this.loading = false;
       } catch (error) {
-        console.log(error.response);
         this.loading = false;
       }
     },

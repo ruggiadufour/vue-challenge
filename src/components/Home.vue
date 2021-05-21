@@ -38,7 +38,7 @@ export default {
     font-size: 1.5rem;
 }
 
-.card-hom img {
+.card-home img {
   width: 100%;
 }
 </style>

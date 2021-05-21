@@ -20,6 +20,7 @@
             <option
               v-for="category in categories"
               v-bind:value="category.list_name_encoded"
+              v-bind:key="category.list_name_encoded"
             >
               {{ category.list_name }}
             </option>
@@ -60,14 +61,11 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./styles/global.css";
-import Search from "./components/Search.vue";
-import Home from "./components/Home.vue";
 
 export default {
   name: "app",
   components: {
-    Search,
-    Home,
+
   },
   data() {
     return {
